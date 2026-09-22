@@ -113,7 +113,7 @@ export default function Founder() {
               After more than two decades of professional and entrepreneurial experience in the UAE, Laura brings together international perspective and practical knowledge of the local business environment.
             </p>
             <p className="text-[13.5px] text-[#555555] leading-[1.75] font-[family-name:var(--font-inter)] mb-8">
-              Her approach is personal and hands-on. Rather than providing generic solutions, Laura works to understand each client's objectives, identify the appropriate path and connect the people and expertise required to move a project forward.
+              Her approach is personal and hands-on. Rather than providing generic solutions, Laura works to understand each client&apos;s objectives, identify the appropriate path and connect the people and expertise required to move a project forward.
             </p>
 
             <Link

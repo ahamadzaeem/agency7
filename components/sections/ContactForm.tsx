@@ -45,7 +45,7 @@ export default function ContactForm() {
             className="text-[2.5rem] md:text-[3.5rem] text-[#111111] leading-[1.1] mb-6"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
-            Let's discuss your project.
+            Let&apos;s discuss your project.
           </h2>
           <p className="text-[14px] text-[#555555] font-[family-name:var(--font-inter)] leading-[1.8] max-w-[500px]">
             Whether you are exploring the UAE for the first time, expanding an existing company or developing a new project, Agency Seven can help you understand the opportunity and determine the next steps.

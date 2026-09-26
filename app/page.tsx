@@ -5,7 +5,6 @@ import WhyUAE from "@/components/sections/WhyUAE";
 import Services from "@/components/sections/Services";
 import Approach from "@/components/sections/Approach";
 import UAEEurope from "@/components/sections/UAEEurope";
-import Founder from "@/components/sections/Founder";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
       <Services />
       <Approach />
       <UAEEurope />
-      <Founder />
       <FinalCTA />
       <Footer />
     </main>

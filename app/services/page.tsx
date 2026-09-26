@@ -1,5 +1,6 @@
 import PageHero from "@/components/ui/PageHero";
 import ServicesDetailed from "@/components/sections/ServicesDetailed";
+import ProfessionalNetwork from "@/components/sections/ProfessionalNetwork";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -18,6 +19,7 @@ export default function ServicesPage() {
         subtitle="Our Services"
       />
       <ServicesDetailed />
+      <ProfessionalNetwork />
       <FinalCTA />
       <Footer />
     </main>

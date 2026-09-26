@@ -66,8 +66,20 @@ export default function UAEEurope() {
             Creating Opportunities.
           </h2>
 
-          <p className="text-[1rem] text-[#D8D6D1] leading-[1.7] mb-10 font-[family-name:var(--font-inter)]">
+          <p className="text-[1rem] text-[#D8D6D1] leading-[1.7] mb-6 font-[family-name:var(--font-inter)]">
             Agency Seven acts as a business bridge between the UAE and Europe, helping international companies better understand and access opportunities in the Emirates.
+          </p>
+
+          <p className="text-[1rem] text-[#D8D6D1] leading-[1.7] mb-6 font-[family-name:var(--font-inter)]">
+            For European companies entering the UAE, we provide local market insight, strategic guidance and coordination.
+          </p>
+
+          <p className="text-[1rem] text-[#D8D6D1] leading-[1.7] mb-6 font-[family-name:var(--font-inter)]">
+            For UAE businesses looking for European opportunities, products, suppliers or partnerships, we can support commercial connections and project development.
+          </p>
+
+          <p className="text-[1.1rem] text-white leading-[1.7] mb-10 font-[family-name:var(--font-serif)] italic">
+            Two markets. One strategic connection.
           </p>
 
           <Link

@@ -74,7 +74,7 @@ export default function UAEEuropeDetailed() {
 
         <div className="fade-up mt-20 p-10 bg-white border border-[#E5E5E5] text-center">
           <p className="text-[1.3rem] text-[#111111] leading-[1.6] font-[family-name:var(--font-cormorant)] italic">
-            "We do not just provide introductions; we help structure the strategy that makes those connections viable and profitable for both sides."
+            &quot;We do not just provide introductions; we help structure the strategy that makes those connections viable and profitable for both sides.&quot;
           </p>
         </div>
       </div>

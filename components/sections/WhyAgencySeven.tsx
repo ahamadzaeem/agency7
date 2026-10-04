@@ -33,7 +33,7 @@ const reasons = [
   }
 ];
 
-export default function WhyAgencySeven() {
+export default function WhyAgencySeven({ hideHeader = false }: { hideHeader?: boolean }) {
   const sectionRef = useRef<HTMLElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
@@ -76,18 +76,20 @@ export default function WhyAgencySeven() {
       className="py-24 md:py-32 bg-white"
     >
       <div className="container-wide">
-        <div ref={headerRef} className="mb-16 md:mb-24">
-          <p className="text-[10px] tracking-[0.25em] text-[#555555] uppercase font-[family-name:var(--font-inter)] mb-6">
-            WHY AGENCY SEVEN?
-          </p>
-          <h2
-            className="text-[2.5rem] md:text-[3.5rem] xl:text-[4rem] text-[#111111] leading-[1.05]"
-            style={{ fontFamily: "var(--font-cormorant)" }}
-          >
-            Local Experience. <br/> International Perspective.
-          </h2>
-          <div className="w-10 h-[1px] bg-[#222222] mt-8" />
-        </div>
+        {!hideHeader && (
+          <div ref={headerRef} className="mb-16 md:mb-24">
+            <p className="text-[10px] tracking-[0.25em] text-[#555555] uppercase font-[family-name:var(--font-inter)] mb-6">
+              WHY AGENCY SEVEN?
+            </p>
+            <h2
+              className="text-[2.5rem] md:text-[3.5rem] xl:text-[4rem] text-[#111111] leading-[1.05]"
+              style={{ fontFamily: "var(--font-cormorant)" }}
+            >
+              Local Experience. <br/> International Perspective.
+            </h2>
+            <div className="w-10 h-[1px] bg-[#222222] mt-8" />
+          </div>
+        )}
 
         <div 
           ref={gridRef}

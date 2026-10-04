@@ -1,6 +1,5 @@
 import PageHero from "@/components/ui/PageHero";
-import WhyUAE from "@/components/sections/WhyUAE";
-import WhyAgencySeven from "@/components/sections/WhyAgencySeven";
+import WhyUAEDetailed from "@/components/sections/WhyUAEDetailed";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -15,11 +14,10 @@ export default function WhyUAEPage() {
     <main>
       <Navbar />
       <PageHero 
-        title="A global platform for business, investment and growth."
-        subtitle="Why The UAE?"
+        title="Discover the Market Potential."
+        subtitle="Why The UAE"
       />
-      <WhyUAE />
-      <WhyAgencySeven />
+      <WhyUAEDetailed />
       <FinalCTA />
       <Footer />
     </main>

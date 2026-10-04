@@ -1,5 +1,5 @@
 import PageHero from "@/components/ui/PageHero";
-import UAEEurope from "@/components/sections/UAEEurope";
+import UAEEuropeDetailed from "@/components/sections/UAEEuropeDetailed";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -14,10 +14,10 @@ export default function UAEEuropePage() {
     <main>
       <Navbar />
       <PageHero 
-        title="Connecting Markets. Creating Opportunities."
+        title="The Bridge Between Markets."
         subtitle="UAE ↔ Europe"
       />
-      <UAEEurope />
+      <UAEEuropeDetailed />
       <FinalCTA />
       <Footer />
     </main>

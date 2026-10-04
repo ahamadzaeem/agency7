@@ -39,7 +39,7 @@ const steps = [
   },
 ];
 
-export default function Approach() {
+export default function Approach({ hideHeader = false }: { hideHeader?: boolean }) {
   const sectionRef = useRef<HTMLElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
   const stepsRef = useRef<HTMLDivElement>(null);
@@ -86,25 +86,27 @@ export default function Approach() {
     >
       <div className="container-wide">
         {/* Header */}
-        <div ref={headerRef} className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 mb-20">
-          <div className="flex-1">
-            <p className="text-[9px] tracking-[0.25em] text-[#555555] uppercase font-[family-name:var(--font-inter)] mb-6">
-              THE AGENCY SEVEN APPROACH
-            </p>
-            <h2
-              className="text-[3rem] md:text-[3.5rem] lg:text-[4.2rem] text-[#111111] leading-[1.05] tracking-[-0.01em]"
-              style={{ fontFamily: "var(--font-cormorant)" }}
-            >
-              More Than Advice.
-            </h2>
-            <div className="w-10 h-[1px] bg-[#222222] mt-8" />
+        {!hideHeader && (
+          <div ref={headerRef} className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 mb-20">
+            <div className="flex-1">
+              <p className="text-[9px] tracking-[0.25em] text-[#555555] uppercase font-[family-name:var(--font-inter)] mb-6">
+                THE AGENCY SEVEN APPROACH
+              </p>
+              <h2
+                className="text-[3rem] md:text-[3.5rem] lg:text-[4.2rem] text-[#111111] leading-[1.05] tracking-[-0.01em]"
+                style={{ fontFamily: "var(--font-cormorant)" }}
+              >
+                More Than Advice.
+              </h2>
+              <div className="w-10 h-[1px] bg-[#222222] mt-8" />
+            </div>
+            <div className="lg:w-[460px] lg:pt-14">
+              <p className="text-[13px] text-[#555555] leading-[1.7] font-[family-name:var(--font-inter)]">
+                We believe successful business development requires more than information. It requires understanding the market, identifying the right opportunity, connecting the right people and coordinating execution.
+              </p>
+            </div>
           </div>
-          <div className="lg:w-[460px] lg:pt-14">
-            <p className="text-[13px] text-[#555555] leading-[1.7] font-[family-name:var(--font-inter)]">
-              We believe successful business development requires more than information. It requires understanding the market, identifying the right opportunity, connecting the right people and coordinating execution.
-            </p>
-          </div>
-        </div>
+        )}
 
         {/* Steps */}
         <div

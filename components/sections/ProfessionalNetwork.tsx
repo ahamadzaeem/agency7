@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ProfessionalNetwork() {
+export default function ProfessionalNetwork({ hideHeader = false }: { hideHeader?: boolean }) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -34,18 +34,22 @@ export default function ProfessionalNetwork() {
       className="bg-[#111111] text-[#F7F6F3] py-24 md:py-32"
     >
       <div className="container-wide max-w-[800px] mx-auto text-center">
-        <p className="text-[10px] tracking-[0.25em] text-[#999999] uppercase font-[family-name:var(--font-inter)] mb-6">
-          PROFESSIONAL NETWORK
-        </p>
-        
-        <h2 
-          className="text-[2.5rem] md:text-[3.5rem] text-white leading-[1.1] mb-8"
-          style={{ fontFamily: "var(--font-cormorant)" }}
-        >
-          One Relationship. The Right Expertise.
-        </h2>
-        
-        <div className="w-10 h-[1px] bg-[#444444] mx-auto mb-10" />
+        {!hideHeader && (
+          <>
+            <p className="text-[10px] tracking-[0.25em] text-[#999999] uppercase font-[family-name:var(--font-inter)] mb-6">
+              PROFESSIONAL NETWORK
+            </p>
+            
+            <h2 
+              className="text-[2.5rem] md:text-[3.5rem] text-white leading-[1.1] mb-8"
+              style={{ fontFamily: "var(--font-cormorant)" }}
+            >
+              One Relationship. The Right Expertise.
+            </h2>
+            
+            <div className="w-10 h-[1px] bg-[#444444] mx-auto mb-10" />
+          </>
+        )}
         
         <p className="text-[14px] text-[#BBBBBB] leading-[1.8] font-[family-name:var(--font-inter)] mb-6 max-w-[600px] mx-auto">
           Some projects require specialist services outside Agency Seven&apos;s direct activities.

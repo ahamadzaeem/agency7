@@ -19,7 +19,7 @@ export default function ServicesPage() {
         subtitle="Our Services"
       />
       <ServicesDetailed />
-      <ProfessionalNetwork />
+      <ProfessionalNetwork hideHeader={true} />
       <FinalCTA />
       <Footer />
     </main>

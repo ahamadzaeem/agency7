@@ -19,9 +19,9 @@ export default function AboutPage() {
         title="More Than Advice."
         subtitle="The Agency Seven Approach"
       />
-      <Approach />
-      <WhyAgencySeven />
-      <ProfessionalNetwork />
+      <Approach hideHeader={true} />
+      <WhyAgencySeven hideHeader={true} />
+      <ProfessionalNetwork hideHeader={true} />
       <FinalCTA />
       <Footer />
     </main>

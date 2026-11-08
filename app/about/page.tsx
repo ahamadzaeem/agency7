@@ -1,4 +1,5 @@
 import PageHero from "@/components/ui/PageHero";
+import FounderMessage from "@/components/sections/FounderMessage";
 import WhyAgencySeven from "@/components/sections/WhyAgencySeven";
 import Approach from "@/components/sections/Approach";
 import ProfessionalNetwork from "@/components/sections/ProfessionalNetwork";
@@ -19,6 +20,7 @@ export default function AboutPage() {
         title="More Than Advice."
         subtitle="The Agency Seven Approach"
       />
+      <FounderMessage />
       <Approach hideHeader={true} />
       <WhyAgencySeven hideHeader={true} />
       <ProfessionalNetwork hideHeader={true} />
